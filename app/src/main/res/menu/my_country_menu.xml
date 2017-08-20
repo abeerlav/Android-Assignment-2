@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_integer_menu"
+        android:title="Add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="ifRoom|withText">
+        <menu>
+            <item android:id="@+id/add_country" android:title="Add Country" />
+
+        </menu>
+    </item>
+
+</menu>

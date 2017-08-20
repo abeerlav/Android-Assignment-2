@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:fragment="a2dv606_aa223de.assignment2.My_Countries.MyCountry_Preference_fragment"
+        android:title="Settings"
+        android:summary="@string/ui_settings" />
+
+</preference-headers>

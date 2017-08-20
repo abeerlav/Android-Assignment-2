@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="a2dv606_aa223de.assignment2.Alarm_Clock.MainActivityAlarm"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Current Time: 10:10:10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_time"
+        android:textSize="20sp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textColor="#009999"
+        android:background="#4D5656"
+        android:gravity="center"/>
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        />
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+        <Button
+            android:text="Turn On"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:textColor="#EEE8AA"
+            android:background="@drawable/rounded"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarm_on" />
+
+        <Button
+            android:text="Turn Off"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#EEE8AA"
+            android:gravity="center"
+            android:background="@drawable/rounded"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarm_off" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

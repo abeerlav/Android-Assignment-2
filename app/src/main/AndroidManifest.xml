@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="a2dv606_aa223de.assignment2">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Assignment 2"
+        android:logo="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainList">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".My_Countries.Add_Country"
+            android:label="Add Country"
+            android:parentActivityName=".My_Countries.My_Countries" />
+        <activity
+            android:name=".My_Countries.My_Countries"
+            android:label="My Countries"
+            android:parentActivityName=".MainList" />
+        <activity
+            android:name=".My_Countries.Update_Country"
+            android:label="Update Countries"
+            android:parentActivityName=".My_Countries.My_Countries" />
+        <activity
+            android:name=".My_Countries.MyCountryPreferenceActivity"
+            android:label="@string/title_activity_my_country_preference"
+            android:parentActivityName=".My_Countries.My_Countries" />
+
+        <activity android:name=".Alarm_Clock.MainActivityAlarm">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".Alarm_Clock.AlarmReciever" />
+
+        <service
+            android:name=".Alarm_Clock.RingtonePlayerService"
+            android:enabled="true" />
+        <service
+            android:name=".MP3_player.LocalService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".MP3_player.MP3Player"
+            android:label="playlist"
+           ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="a2dv606_aa223de.assignment_2.MyCountries.My_Countries">
+
+    <item android:id="@+id/action_add_country"
+          android:title="add"
+
+          android:showAsAction="always"
+          />
+
+
+        <item android:id="@+id/sort_by_country_desc"
+          android:title="Sort by country DESC"  ></item>
+
+        <item android:id="@+id/sort_by_country_ASC"
+            android:title="Sort by country ASC"  ></item>
+
+        <item android:id="@+id/sort_by_year_desc"
+            android:title="Sort by year DESC"  ></item>
+        <item android:id="@+id/sort_by_year_asc"
+            android:title="Sort by year ASC"  ></item>
+        <item android:id="@+id/settings"
+            android:title="settings"  ></item>
+</menu>
